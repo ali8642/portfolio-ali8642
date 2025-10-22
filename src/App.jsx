@@ -1,19 +1,25 @@
 import "./App.css";
-import BlackFireCursor from "./components/BlackFireCursor";
-import Sidebar from "./components/Sidebar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import BaseLayout from "./components/BaseLayout";
 
 function App() {
-  return (
-    <>
-      <section className="blobMain">
-        <div className="container">
-          <div className="blob"></div>
-        </div>
-      </section>
-      <Sidebar />
-      <BlackFireCursor />
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><BaseLayout /><Home /></>,
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+  ]);
+
+  return <>
+  {/* For React Routing */}
+  <RouterProvider router={router} />
+  </>;
 }
 
 export default App;
