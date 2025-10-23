@@ -44,10 +44,14 @@ body {
 /* Animated Gradient Background styling */
 .blobMain {
     width: 100vw;
-    position: relative;
+    position: fixed;
     height: 100vh;
     background-color: rgb(14, 14, 31);
     overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .container {
@@ -179,7 +183,7 @@ body {
 
 .gray {
     text-decoration: none;
-    color: rgb(161, 161, 161);
+    color: rgba(41, 116, 221, 0.8);
     padding: 0.3rem;
     display: flex;
     justify-content: center;
@@ -214,6 +218,7 @@ li {
     position: fixed;
     right: 1.9%;
     top: 19.8%;
+    z-index: 10;
     background: conic-gradient(from var(--deg) at center,
             #00c3ff,
             #4d0199,

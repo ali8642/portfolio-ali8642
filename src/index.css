@@ -4,3 +4,23 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeImg {
+    width: 35%;
+    border-radius: 4px;
+    background-color: #1A1A2E;
+    background-image: radial-gradient(#30304D 1px, transparent 1px),
+        radial-gradient(#30304D 1px, #1A1A2E 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}

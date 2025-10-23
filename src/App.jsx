@@ -7,19 +7,21 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <><BaseLayout /><Home /></>,
+      element: (
+        <>
+          <Home />
+          {/* <BaseLayout /> */}
+        </>
+      ),
     },
-    {},
-    {},
-    {},
-    {},
-    {},
   ]);
 
-  return <>
-  {/* For React Routing */}
-  <RouterProvider router={router} />
-  </>;
+  return (
+    <>
+      {/* For React Routing */}
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
