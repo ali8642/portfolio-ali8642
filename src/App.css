@@ -174,7 +174,7 @@ body {
     border-radius: 24px;
     position: fixed;
     right: 2%;
-    top: 20%;
+    bottom: 20%;
     font-size: 2rem;
     aspect-ratio: 1/1;
     display: flex;
@@ -227,7 +227,7 @@ li {
     border-radius: 26px;
     position: fixed;
     right: 1.9%;
-    top: 19.8%;
+    bottom: 19.8%;
     z-index: 10;
     background: conic-gradient(from var(--deg) at center,
             #00c3ff,
@@ -257,15 +257,28 @@ li {
 
 @media (max-width: 999px) {
     .sidebar {
-        max-width: 32px;
-        max-height: 50%;
+        left: 0;
+        bottom: 0;
+        min-width: 100%;
+        max-height: 32px;
         font-size: 1.5rem;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .sidebar ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .gradient {
-        max-height: 50.5%;
-        max-width: 34px;
-        right: 1.7%;
+        left: 0;
+        bottom: 0;
+        min-width: 100%;
+        max-height: 34px;
+        font-size: 1.5rem;
+        border-radius: 24px 24px 0 0;
     }
 }
 
