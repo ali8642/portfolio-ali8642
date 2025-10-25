@@ -1,6 +1,7 @@
 import transitions from "../transitions";
 import "../index.css";
 import { Link } from "react-router-dom";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import "animate.css";
 
 function Home() {
@@ -21,7 +22,7 @@ function Home() {
           </p>
           <button id="hov">
             <Link to="/projects" className="buttonLink">
-              Explore My Work
+              Explore My Work <MdOutlineArrowOutward />
             </Link>
           </button>
         </div>

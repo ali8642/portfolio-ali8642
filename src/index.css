@@ -105,9 +105,10 @@ body {
     }
 
     .homeAbout {
+        font-size: 1rem;
         max-width: 95%;
         padding: 1rem;
-        gap: 12px;
+        gap: 1.5rem;
     }
 
     .homeAbout h1 span {
