@@ -119,8 +119,8 @@ body {
     }
 
     .homeImg {
-        max-height: 80vh;
-        background-size: contain;
+        max-height: 70vh;
+        background-size: cover;
         border-left: none;
     }
 }
