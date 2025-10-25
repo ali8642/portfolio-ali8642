@@ -258,10 +258,12 @@ li {
 @media (max-width: 999px) {
     .sidebar {
         max-width: 32px;
+        max-height: 50%;
         font-size: 1.5rem;
     }
 
     .gradient {
+        max-height: 50.5%;
         max-width: 34px;
         right: 1.7%;
     }
