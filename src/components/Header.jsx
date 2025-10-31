@@ -11,14 +11,14 @@ const Header = () => {
           className="flex gap-2 items-center p-2 absolute left-4"
         >
           <img
-            src="/public/images/pfp.png"
+            src="/images/pfp.png"
             alt="pfp"
             className="w-8 h-8 object-cover rounded-full bg-amber-200"
           />
           <h2 className="text-2xl">ali8642</h2>
         </Link>
         <Link
-          to="public\documents\Resume - Junior Web Developer.pdf"
+          to="\documents\Resume - Junior Web Developer.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-black text-2xl absolute right-4 py-1.5 px-3 bg-white border-gray-400 rounded-full flex gap-2 items-center transition-transform duration-300 hover:scale-105 shadow-black cursor-pointer"

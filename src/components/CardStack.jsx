@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export default function CardStack() {
   const cards = [
-    "/public/images/project1.png",
-    "/public/images/project2.png",
-    "/public/images/project3.png",
-    "/public/images/project4.png",
-    "/public/images/project5.png",
+    "/images/project1.png",
+    "/images/project2.png",
+    "/images/project3.png",
+    "/images/project4.png",
+    "/images/project5.png",
   ];
 
   // Define z-index pattern
