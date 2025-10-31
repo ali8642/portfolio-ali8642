@@ -11,7 +11,7 @@ const Header = () => {
           className="flex gap-2 items-center p-2 absolute left-4"
         >
           <img
-            src="./public/images/pfp.png"
+            src="/public/images/pfp.png"
             alt="pfp"
             className="w-8 h-8 object-cover rounded-full bg-amber-200"
           />
