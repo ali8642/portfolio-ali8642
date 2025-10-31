@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       {/* Main header linked to about setion for displaying my ID */}
-      <div className="w-[100%] my-9 lg:my-4">
+      <div className="w-full my-6 lg:m-2">
         <Link
           to="/about"
           className="flex gap-2 items-center p-2 absolute left-4"
@@ -18,7 +18,7 @@ const Header = () => {
           <h2 className="text-2xl">ali8642</h2>
         </Link>
         <Link
-          to="\documents\Resume - Junior Web Developer.pdf"
+          to="/documents/Resume - Junior Web Developer.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-black text-2xl absolute right-4 py-1.5 px-3 bg-white border-gray-400 rounded-full flex gap-2 items-center transition-transform duration-300 hover:scale-105 shadow-black cursor-pointer"

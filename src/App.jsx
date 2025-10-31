@@ -5,40 +5,51 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Experience from "./pages/Experience";
-import Education from "./pages/Education";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
 import BaseLayout from "./components/BaseLayout";
+import { lazy, Suspense } from "react";
+
+// ✅ Lazy imports for pages
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Experience = lazy(() => import("./pages/Experience"));
+const Education = lazy(() => import("./pages/Education"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
+
+// Loading fallback (shows while lazy components load)
+const Loader = () => (
+  <div className="flex items-center justify-center h-screen text-white text-3xl">
+    Loading...
+  </div>
+);
 
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
     <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      {/* Suspense wraps routes to handle lazy-loaded components */}
+      <Suspense fallback={<Loader />}>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
     </AnimatePresence>
   );
 }
 
 function App() {
   return (
-    <>
-      <Router>
-        <BaseLayout />
-        <AnimatedRoutes />
-      </Router>
-    </>
+    <Router>
+      <BaseLayout />
+      <AnimatedRoutes />
+    </Router>
   );
 }
 

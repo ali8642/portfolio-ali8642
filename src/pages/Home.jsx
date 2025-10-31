@@ -11,14 +11,14 @@ import Header from "../components/Header";
 function Home() {
   return (
     // Main div for all the stuff
-    <div className="h-screen p-0 flex flex-col w-full justify-between">
+    <div className="h-screen p-0 flex flex-col-reverse lg:flex-col w-full gap-0 justify-end lg:justify-between overflow-hidden animate__animated animate__slideInUp">
       {/* Main div for home stuff */}
       <div className="w-full p-4 relative text-white z-5 bg-transparent flex flex-col justify-between items-center lg:gap-4 gap-8">
         {/* Header component */}
         <Header />
 
         {/* Hero content */}
-        <h1 className="text-5xl pt-12 lg:text-[4rem] text-center text-shadow-black leading-10">
+        <h1 className="text-5xl pt-8 lg:text-[4rem] text-center text-shadow-black leading-10">
           Transforming Ideas into <br /> Engaging Front-End Experiences
         </h1>
 
@@ -44,7 +44,7 @@ function Home() {
           <button>
             <Link
               to="/about"
-              className="bg-white text-black border-gray-500 flex justify-between gap-1.5 content-center text-3xl w-fit py-1.5 px-3 rounded-full transition-transform duration-300 hover:scale-105 shadow-black cursor-pointer"
+              className="bg-white text-black border-gray-500 flex justify-between gap-1.5 content-center text-3xl w-fit p-1.5 lg:px-3 rounded-full transition-transform duration-300 hover:scale-105 shadow-black cursor-pointer"
             >
               About Me
             </Link>
