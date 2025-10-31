@@ -7,7 +7,7 @@ import BlackFireCursor from "./BlackFireCursor"
 const BaseLayout = () => {
   return (
     <>
-      <div>
+      <div className="flex flex-column flex-wrap w-[100%] h-[100%] justify-between z-10">
         <section className="blobMain">
           <div className="container">
             <div className="blob"></div>
