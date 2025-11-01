@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       {/* Main header linked to about setion for displaying my ID */}
-      <div className="w-full my-6 lg:m-2">
+      <div className="w-full my-6 lg:m-2 animate__animated animate__fadeInUp">
         <Link
           to="/about"
           className="flex gap-2 items-center p-2 absolute left-4"

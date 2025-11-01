@@ -2,7 +2,7 @@ export default function FeatureShowcase() {
   return (
     <div className="h-2/4 flex items-center justify-center">
       {/* MAIN PICTURE WITH FLOATING BOXES */}
-      <div className="relative w-full max-w-3xl h-[500px] object-cover">
+      <div className="relative w-full max-w-3xl h-[500px] object-cover ">
         {/* Main pfp image of myself */}
         <img
           src="/images/pfp.png"

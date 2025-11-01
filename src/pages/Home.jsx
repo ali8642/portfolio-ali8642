@@ -11,9 +11,11 @@ import Header from "../components/Header";
 function Home() {
   return (
     // Main div for all the stuff
-    <div className="h-screen p-0 flex flex-col-reverse lg:flex-col w-full gap-0 justify-end lg:justify-between overflow-hidden animate__animated animate__slideInUp">
+    <div className="h-screen p-0 flex flex-col-reverse lg:flex-col w-full gap-0 justify-end lg:justify-between overflow-hidden">
+
       {/* Main div for home stuff */}
-      <div className="w-full p-4 relative text-white z-5 bg-transparent flex flex-col justify-between items-center lg:gap-4 gap-8">
+      <div className="w-full p-4 relative text-white z-5 bg-transparent flex flex-col justify-between items-center lg:gap-4 gap-8 animate__animated animate__slideInDown">
+
         {/* Header component */}
         <Header />
 
