@@ -41,14 +41,14 @@ const About = () => {
 
         {/* skills section for displaying skills in tech */}
         <section className="cursor-none my-4 lg:my-0 lg:w-[88%] w-full flex flex-col items-center">
-          <h2 className="w-fit lg:w-full text-2xl text-white lg:text-5xl font-semibold lg:mb-4 mb-8 text-center shadow-black purple-gradient px-4 rounded-md mt-12">
+          <h2 className="w-fit lg:w-full text-white text-5xl font-semibold lg:mb-4 mb-8 text-center shadow-black purple-gradient px-4 rounded-md mt-12">
             Skills
           </h2>
           <div className="flex flex-col lg:flex-row lg:gap-6 gap-8 items-stretch lg:justify-center">
             {/* skills frontend */}
             <div className="bg-gray-200 bg-opacity-50 p-4 rounded-lg shadow-black transition-transform duration-300 hover:scale-105">
               <h3 className="font-semibold text-black text-4xl">Frontend</h3>
-              <p className="text-2xl text-black flex lg:flex-row flex-col items-center gap-8">
+              <p className="text-3xl text-black flex lg:flex-row flex-col items-center gap-8">
                 React, JavaScript, HTML, CSS
                 <span className="flex gap-2">
                   <img src="/icons/react.png" className="max-h-12" />
@@ -62,7 +62,7 @@ const About = () => {
             {/* styling skills */}
             <div className="bg-gray-200 bg-opacity-50 p-4 rounded-lg shadow-black transition-transform duration-300 hover:scale-105">
               <h3 className="font-semibold text-black text-4xl">Styling</h3>
-              <p className="text-2xl text-black flex lg:flex-row flex-col items-center gap-8">
+              <p className="text-3xl text-black flex lg:flex-row flex-col items-center gap-8">
                 Tailwind CSS, SCSS
                 <span className="flex gap-2 items-center">
                   <img src="/icons/tailwindcss.png" className="max-h-8" />
@@ -74,7 +74,7 @@ const About = () => {
             {/* skills for tools */}
             <div className="bg-gray-200 bg-opacity-50 p-4 rounded-lg shadow-black transition-transform duration-300 hover:scale-105 lg:w-fit min-w-80">
               <h3 className="font-semibold text-black text-4xl">Tools</h3>
-              <p className="text-2xl text-black flex lg:flex-row flex-col items-center gap-8">
+              <p className="text-3xl text-black flex lg:flex-row flex-col items-center gap-8">
                 Git, Vite, VS Code
                 <span className="flex gap-2">
                   <img src="/icons/git.png" className="max-h-12" />
@@ -88,7 +88,7 @@ const About = () => {
 
         {/* What I do section */}
         <section className="cursor-none my-4 lg:my-0 lg:w-[88%] w-full flex flex-col items-center">
-          <h2 className="w-fit lg:w-full text-2xl text-white lg:text-5xl font-semibold lg:mb-4 mb-8 text-center shadow-black purple-gradient px-4 rounded-md mt-12">
+          <h2 className="w-fit lg:w-full text-white text-5xl font-semibold lg:mb-4 mb-8 text-center shadow-black purple-gradient px-4 rounded-md mt-12">
             What I Do
           </h2>
           <div className="flex flex-col lg:flex-row gap-6 justify-center">
@@ -96,7 +96,7 @@ const About = () => {
               <h3 className="font-semibold text-black text-4xl">
                 Web Development
               </h3>
-              <p className="text-2xl text-black flex items-center gap-8 leading-4">
+              <p className="text-3xl text-black flex items-center gap-8 leading-4">
                 Building responsive and interactive web applications using
                 modern technologies and best practices.
               </p>
@@ -104,7 +104,7 @@ const About = () => {
 
             <div className="bg-gray-200 bg-opacity-50 p-4 rounded-lg shadow-black transition-transform duration-300 hover:scale-105 lg:w-fit max-w-80">
               <h3 className="font-semibold text-black text-4xl">UI/UX Focus</h3>
-              <p className="text-2xl text-black flex items-center gap-8 leading-4">
+              <p className="text-3xl text-black flex items-center gap-8 leading-4">
                 Creating user-friendly interfaces with attention to detail and
                 smooth user experiences.
               </p>
